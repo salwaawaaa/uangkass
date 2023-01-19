@@ -1,9 +1,9 @@
 <template>
     <div>
         <form @submit.prevent="masuk()">
-            <input v-model="email" type="email"> <br/>
-            <input v-model="password" type="password"> <br/>
-            <button>kirim</button>
+            <br><input v-model="email" type="email"> <br/>
+            <br><input v-model="password" type="password"> <br/>
+            <br><button>masuk</button>
         </form>
     </div>
 </template>
