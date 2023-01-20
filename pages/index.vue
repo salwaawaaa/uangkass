@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Uang Kas</h1>
-    <NuxtLink to="/admin/tambah">Bayar</NuxtLink> /
-    <NuxtLink to="/masuk">Masuk</NuxtLink>
+
+    <NuxtLink to="/masuk" class="btn btn-primary my-3">Masuk</NuxtLink>
     <table class="table">
       <thead>
         <tr>
