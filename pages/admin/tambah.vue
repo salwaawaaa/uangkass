@@ -3,21 +3,24 @@
     <div class="col-md-4 m-auto card p-3 mt-5">
       <h1 class="text-center text-dark">Bayar Kas</h1>
       <form @submit.prevent="tambah()">
+
+        <label for="name" class="text-dark fw-bold upper">Nama</label>
         <select v-model="nama" class="form-control">
           <option v-for="s in siswa" :key="s.id" :value="s.id">
             {{ s.nama }}
-          </option></select
-        ><br />
+          </option></select><br />
+          
+         <label for="week" class="text-dark fw-bold upper">Minggu</label>
         <select v-model="minggu" class="form-control">
           <option v-for="s in weeks" :key="s.id" :value="s.id">
             {{ s.minggu }}
-          </option></select
-        ><br />
-        <input v-model="nominal" placeholder="nominal" class="form-control" />
-        <br />
+          </option></select><br />
 
-        <button type="submit" class="btn btn-primary my-3">Tambah</button><br />
-        <NuxtLink to="/" class="btn btn-danger">Kembali</NuxtLink>
+          <label for="nominal" class="text-dark fw-bold upper">Nominal</label>
+        <input type="nominal" name="nominal" id="nominal"><br/>
+          
+        <button type="submit" class="btn btn-primary my-3">Tambah</button>
+        <NuxtLink to="/admin" class="btn btn-danger m-3">Kembali</NuxtLink>
       </form>
     </div>
   </div>

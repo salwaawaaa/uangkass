@@ -5,7 +5,7 @@
     <NuxtLink to="/masuk" class="btn btn-primary my-3">Masuk</NuxtLink>
     <table class="table">
       <thead>
-        <tr>
+        <tr class="text-white bg-secondary">
           <th>#</th>
           <th>nama</th>
           <th>tanggal</th>

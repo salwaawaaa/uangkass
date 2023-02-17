@@ -1,10 +1,15 @@
 <template>
     <div>
+        <div class="col-md-4 m-auto card p-3 mt-5 bg-info">
+      <h3 class="text-center fw-bolder text-dark">DAFTAR</h3>
         <form @submit.prevent="masuk()">
-            <input v-model="email" type="email"> <br>
-            <input v-model="password" type="password"> <br>
-            <button>kirim</button>
+            <label for="email" class="text-dark fw-bold upper">Email</label>
+             <input v-model="email" id="email" type="email" class="form-control"/> <br>
+             <label for="password" class="text-dark fw-bold upper">Password</label>
+            <input v-model="password" type="password" class="form-control"> <br>
+            <button class="btn btn-primary me-3">masuk</button>
         </form>
+        </div>
     </div>
 </template>
 
