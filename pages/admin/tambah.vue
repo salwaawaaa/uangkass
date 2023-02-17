@@ -16,8 +16,8 @@
             {{ s.minggu }}
           </option></select><br />
 
-          <label for="nominal" class="text-dark fw-bold upper">Nominal</label>
-        <input type="" name="nominal" id="nominal"><br/>
+          <label for="nominal" class="text-dark fw-bold upper">Nominal Rp</label>
+        <input v-model="nominal" id="nominal" type="nominal" class="form-control" />
           
         <button type="submit" class="btn btn-primary my-3">Tambah</button>
         <NuxtLink to="/admin" class="btn btn-danger m-3">Kembali</NuxtLink>

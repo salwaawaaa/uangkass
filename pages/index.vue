@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Uang Kas</h1>
 
     <NuxtLink to="/masuk" class="btn btn-primary my-3">Masuk</NuxtLink>
     <table class="table">
