@@ -1,18 +1,23 @@
 <template>
-  <div>
-    <NuxtLink to="/admin/tambah" class="btn btn-info text-white m-3">Bayar</NuxtLink>
+<div class="">
+  <div class="container">
+    <div class="card-header bg-secondary">
+      <h1 class="text-white fw-bolder">Selamat Datang Bendahara</h1>
+    </div>
+    <NuxtLink to="/admin/tambah" class="btn btn-info text-white m-3 fw-semibold">Bayar</NuxtLink>
+
 
     <select v-model="minggu">
       <option v-for="week in weeks" :key="week.id" :value="week.minggu">{{ week.minggu }}</option>
     </select>
 
-    <button @click="logout()" class="text-white btn btn-dark m-3">Logout</button>
+    <button @click="logout()" class="text-white btn btn-secondary m-3 fw-semibold">Logout</button>
 
     <div class="text-muted">ada {{ dataFilter.length }} data di {{ minggu }}</div>
     <table class="table">
       <thead>
-        <tr class="text-white bg-dark">
-          <th>#</th>
+        <tr class="text-white bg-secondary">
+          <th>No</th>
           <th>nama</th>
           <th>minggu</th>
           <th>nominal</th>
@@ -31,6 +36,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 </template>
 
