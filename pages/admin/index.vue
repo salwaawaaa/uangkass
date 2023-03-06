@@ -1,22 +1,24 @@
 <template>
 <div class="">
   <div class="container">
-    <div class="card-header bg-secondary">
+    <div class="card mt-5">
+    <div class="card-header bg-dark">
       <h1 class="text-white fw-bolder">Selamat Datang Bendahara</h1>
     </div>
-    <NuxtLink to="/admin/tambah" class="btn btn-info text-white m-3 fw-semibold">Bayar</NuxtLink>
+    </div>
 
+    <NuxtLink to="/admin/tambah" class="btn btn-info text-white m-3 fw-semibold">Bayar</NuxtLink>
 
     <select v-model="minggu">
       <option v-for="week in weeks" :key="week.id" :value="week.minggu">{{ week.minggu }}</option>
     </select>
 
-    <button @click="logout()" class="text-white btn btn-secondary m-3 fw-semibold">Logout</button>
+    <button @click="logout()" class="text-white btn btn-dark m-3 fw-semibold">Logout</button>
 
     <div class="text-muted">ada {{ dataFilter.length }} data di {{ minggu }}</div>
-    <table class="table">
+    <table class="table table-striped">
       <thead>
-        <tr class="text-white bg-secondary">
+        <tr class="text-white bg-dark">
           <th>No</th>
           <th>nama</th>
           <th>minggu</th>

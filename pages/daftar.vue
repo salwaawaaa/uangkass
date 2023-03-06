@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-4 m-auto p-3 mt-5">
       <div class="card">
-        <div class="card-header bg-secondary"><h3 class="text-center fw-bolder text-white">DAFTAR</h3></div>
+        <div class="card-header bg-dark"><h3 class="text-center fw-bolder text-white">DAFTAR</h3></div>
         <div class="card-body">
         <form @submit.prevent="masuk()">
             <label for="email" class="text-dark fw-bold upper">Email</label>
