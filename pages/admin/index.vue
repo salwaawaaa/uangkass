@@ -30,6 +30,7 @@
                 <th>nama</th>
                 <th>minggu</th>
                 <th>nominal</th>
+                <th>aksi</th>
               </tr>
             </thead>
             <tbody>
@@ -42,6 +43,8 @@
                 <td>{{ visitor.id_siswa.nama }}</td>
                 <td>{{ visitor.id_week.minggu }}</td>
                 <td>{{ visitor.nominal }}</td>
+                <td>{{ visitor.aksi }} <NuxtLink  to="/admin/tambah" class="btn btn-info text-white m-3 fw-semibold">edit</NuxtLink>
+                <NuxtLink  to="/admin/hapus" class="btn btn-info text-white m-3 fw-semibold">hapus</NuxtLink></td>
               </tr>
             </tbody>
           </table>
