@@ -12,6 +12,7 @@
             <label for="pass" class="text-dark fw-bold mt-3">Password</label><input v-model="password" id="pass" type="password" class="form-control" />
 
             <button class="btn btn-primary me-3 fw-semibold mt-3">masuk</button>
+            <NuxtLink to="/daftar" class="btn btn-info  me-3 text-white mt-3 fw-semibold text-right">Sigin</NuxtLink>
           </form>
         </div>
       </div>
